@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bengkel Sumber Urip</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+  <!-- Header -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">Bengkel AC mobil<span> Sumber Urip</span></div>
+      <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home">Beranda</a></li>
+        <li><a href="#services">Layanan</a></li>
+        <li><a href="#about">Tentang</a></li>
+        <li><a href="#gallery">Galeri</a></li>
+        <li><a href="#testimoni">Testimoni</a></li>
+        <li><a href="#contact">Kontak</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="slider">
+      <div class="slide active" style="background-image: url(desain01.jpg);"></div>
+      <div class="slide" style="background-image: url(desain02.jpg);"></div>
+      <div class="slide" style="background-image: url(desain03.jpg);"></div>
+    </div>
+    <div class="hero-content">
+      <h1>Bengkel AC Mobil Sumber Urip</h1>
+      <p>Solusi perawatan & perbaikan kendaraan Anda dengan profesional dan bergaransi</p>
+      <!-- Tombol diarahkan ke #contact -->
+      <a href="#contact" class="btn hero-btn">Reservasi Sekarang</a>
+    </div>
+  </section>
+
+  <!-- Tentang -->
+  <section id="about">
+    <h2 data-aos="fade-up">Mengapa Memilih Kami?</h2>
+    <div class="grid">
+      <div class="card" data-aos="zoom-in">
+        <i class="fas fa-user-shield"></i>
+        <h3>Teknisi Berpengalaman</h3>
+        <p>Lebih dari 10 tahun pengalaman menangani berbagai kendaraan.</p>
+      </div>
+      <div class="card" data-aos="zoom-in" data-aos-delay="200">
+        <i class="fas fa-clock"></i>
+        <h3>Pelayanan Cepat</h3>
+        <p>Servis selesai tepat waktu dengan hasil yang memuaskan.</p>
+      </div>
+      <div class="card" data-aos="zoom-in" data-aos-delay="400">
+        <i class="fas fa-award"></i>
+        <h3>Bergaransi</h3>
+        <p>Kami memberikan jaminan kualitas pada setiap layanan.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Layanan -->
+  <section id="services">
+    <h2 data-aos="fade-up">Layanan Kami</h2>
+    <div class="layanan">
+      <div class="card" data-aos="flip-left">
+        <i class="fas fa-snowflake"></i>
+        <h3>Service AC Mobil</h3>
+        <p>Perawatan dan perbaikan AC mobil agar tetap dingin dan nyaman.</p>
+      </div>
+      <div class="card" data-aos="flip-right">
+        <i class="fas fa-car"></i>
+        <h3>Pasang Baru AC</h3>
+        <p>Pemasangan AC baru untuk mobil, elf, truck, pick up, dan lainnya.</p>
+      </div>
+      <div class="card" data-aos="flip-left">
+        <i class="fas fa-cogs"></i>
+        <h3>Spare Part</h3>
+        <p>Penyediaan spare part AC mobil berkualitas dan bergaransi.</p>
+      </div>
+      <div class="card" data-aos="flip-right">
+        <i class="fas fa-check-circle"></i>
+        <h3>Cek AC Mobil Gratis</h3>
+        <p>Pengecekan kondisi AC mobil Anda secara gratis.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Galeri -->
+  <section id="gallery">
+    <h2 data-aos="fade-up">Galeri Bengkel</h2>
+    <div class="gallery-grid">
+      <img src="desain01.jpg" alt="Bengkel" data-aos="zoom-in">
+      <img src="desain02.jpg" alt="Servis Mobil" data-aos="zoom-in" data-aos-delay="200">
+      <img src="desain03.jpg" alt="Perbaikan Mesin" data-aos="zoom-in" data-aos-delay="400">
+    </div>
+  </section>
+
+  <!-- Testimoni -->
+  <section id="testimoni">
+    <h2 data-aos="fade-up">Testimoni Pelanggan</h2>
+    <div class="testi-grid">
+      <div class="testi-card" data-aos="fade-right">
+        <p>"Servis cepat dan hasil memuaskan, mobil saya terasa seperti baru lagi!"</p>
+        <h4>- Budi S</h4>
+      </div>
+      <div class="testi-card" data-aos="fade-left">
+        <p>"Harga terjangkau, teknisi ramah, saya sangat puas dengan pelayanannya."</p>
+        <h4>- Ani R</h4>
+      </div>
+    </div>
+  </section>
+
+  <!-- Kontak & Lokasi -->
+  <section id="contact">
+    <div class="contact-location">
+      <!-- Form -->
+      <div class="contact" data-aos="zoom-in">
+        <h2 class="contact-title">Hubungi Kami</h2>
+        <form id="wa-form">
+          <input type="text" id="nama" placeholder="Nama Anda" required>
+          <input type="text" id="nama" placeholder="Nama mobil" required>
+          <textarea id="pesan" rows="5" placeholder="Keluhan Anda..." required></textarea>
+          <button type="submit">Kirim</button>
+        </form>
+      </div>
+      <!-- Lokasi -->
+      <div class="location" data-aos="fade-up">
+        <h3>Lokasi Bengkel</h3>
+        <p>Jl. R.A Basuni No.3C, Daleman Utara, Japan, Kec. Sooko, Kabupaten Mojokerto, Jawa Timur 61361</p>
+        <iframe src="hhttps://www.google.com/maps?q=-7.500164,112.422650&output=embed" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- Jam Operasional -->
+  <div class="working-hours" id="workingBox" data-aos="zoom-in">
+    <button class="close-btn" onclick="document.getElementById('workingBox').style.display='none'">✖</button>
+    <h2>Jam Operasional</h2>
+    <p>Siap Melayani Anda</p>
+    <p><b>Senin – Sabtu : 8.00 – 17.00</b></p>
+    <p><b>Minggu : Libur</b></p>
+    <a href="https://wa.me/6285236402121" target="_blank" class="wa-btn">
+      <i class="fab fa-whatsapp"></i> Reservasi Sekarang
+    </a>
+  </div>
+
+  <!-- WhatsApp Floating -->
+  <div class="wa-floating">
+    <a href="https://wa.me/6285236402121" target="_blank">
+      <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WA">
+    </a>
+    <div class="tooltip">Butuh Konsultasi?<br><b>Hubungi Kami</b></div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    © 2025 Bengkel Sumber Urip | Semua Hak Dilindungi
+  </footer>
+
+  <!-- JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
